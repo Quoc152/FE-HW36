@@ -105,7 +105,7 @@ function attachClickEvents() {
     } else if (visibleDots.length === 12) {
         visibleDots.forEach((dot, index) => {
             dot.onclick = function () {
-                const widthItem = document.querySelector('.item img').offsetWidth;
+                const widthItem = document.querySelector('.item').offsetWidth;
                 document.getElementById('formList').scrollLeft = widthItem * index;
                 setActiveDot(dot.id);
             };
